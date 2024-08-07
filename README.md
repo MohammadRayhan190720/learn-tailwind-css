@@ -36,3 +36,29 @@ Different Between Bootstrap and Tailwind
   }
 
 }
+
+### variants diractive // replace by @layer
+// if a make a utility and I use stade variant(hover,focus ,active ) like this then I use  
+- @variant focus,hover,active{
+   .text-body{
+    font-size : 10px;
+   }
+}
+
+###theme()and screen function
+- Use the theme() function to access your Tailwind config values using dot notation.
+```
+.content-area {
+  height: calc(100vh - theme(spacing.12));
+}
+```
+- screen
+ @media screen(sm) {
+  /* ... */
+}
+
+### theme
+- akhane kno kicu set korle seta tailwind ar deafult design system ke replace krbe
+### extend
+- akhane kno kicu dile seta tailwind ar deafult design system ke replace krbe na
+
