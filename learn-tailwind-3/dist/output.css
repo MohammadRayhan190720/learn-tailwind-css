@@ -608,44 +608,24 @@ video {
   width: 100%;
 }
 
-.columns-3 {
-  -moz-columns: 3;
-       columns: 3;
-}
-
 .columns-1 {
   -moz-columns: 1;
        columns: 1;
 }
 
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
+.columns-3 {
+  -moz-columns: 3;
+       columns: 3;
 }
 
-.columns-12 {
-  -moz-columns: 12;
-       columns: 12;
+.break-before-column {
+  -moz-column-break-before: column;
+       break-before: column;
 }
 
-.columns-auto {
-  -moz-columns: auto;
-       columns: auto;
-}
-
-.columns-3xs {
-  -moz-columns: 16rem;
-       columns: 16rem;
-}
-
-.columns-2xs {
-  -moz-columns: 18rem;
-       columns: 18rem;
-}
-
-.columns-xs {
-  -moz-columns: 20rem;
-       columns: 20rem;
+.break-after-column {
+  -moz-column-break-after: column;
+       break-after: column;
 }
 
 .justify-center {
@@ -660,13 +640,38 @@ video {
   gap: 2rem;
 }
 
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
-.gap-y-8 {
-  row-gap: 2rem;
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-indigo-600 {
+  --tw-gradient-from: #4f46e5 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(79 70 229 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-pink-500 {
+  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+
+.box-decoration-slice {
+  -webkit-box-decoration-break: slice;
+          box-decoration-break: slice;
+}
+
+.box-decoration-clone {
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .text-center {
@@ -685,6 +690,11 @@ video {
   color: #e5e5;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .after\:ml-1::after {
   content: var(--tw-content);
   margin-left: 0.25rem;
@@ -697,6 +707,16 @@ video {
 
 .hover\:aspect-video:hover {
   aspect-ratio: 16 / 9;
+}
+
+.hover\:box-decoration-slice:hover {
+  -webkit-box-decoration-break: slice;
+          box-decoration-break: slice;
+}
+
+.hover\:box-decoration-clone:hover {
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
 }
 
 @media (min-width: 640px) {
